@@ -6,26 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
     <title>Admin | Dashboard</title>
 </head>
 <!-- https://www.youtube.com/watch?v=BOF79TAIkYQ -->
 
 <body>
-    <div class="container">
-        <aside>
-            <div class="top">
-                <div class="logo">
+    <div class="my-container gap-3">
+        <aside class="">
+            <div class="top d-flex align-item-center justify-content-between mt-4">
+                <div class="logo d-flex gap-3">
                     <img src="https://hicco.com.br/assets/imgs/svg/logo_principal.svg" alt="">
                     <h1>Hicco</h1>
                 </div>
 
-                <div class="close" id="close-btn">
+                <div class="close d-none" id="close-btn">
                     <span class="material-icons-sharp">close</span>
                 </div>
             </div>
 
-            <div class="sidebar">
+            <div class="sidebar d-flex flex-column">
                 <a href="" class="active">
                     <span class="material-icons-sharp">grid_view</span>
                     <h3>Dashboard</h3>
@@ -69,27 +72,27 @@
             </div>
         </aside>
 
-        <main>
+        <main class="mt-4 ">
             <h2>Dashboard</h2>
 
-            <div class="date">
-                <input type="date">
+            <div class="date mt-3 py-1 px-2">
+                <input type="date border-0">
             </div>
 
             <div class="insights">
                 <div class="sales">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
+                    <span class="material-icons-sharp p-1 rounded-circle">analytics</span>
+                    <div class="middle d-flex align-items-center justify-content-between">
                         <div class="left">
                             <h3>Total Sales</h3>
                             <h1>$25,024</h1>
                         </div>
-                        <div class="progress">
+                        <div class="progress rounded-circle">
                             <svg>
                                 <circle cx="38" cy="38" r="36"></circle>
                             </svg>
 
-                            <div class="number">
+                            <div class="number d-flex align-items-center justify-content-center w-100 h-100 position-absolute top-0 left-0">
                                 <p>81%</p>
                             </div>
                         </div>
@@ -98,18 +101,18 @@
                 </div>
 
                 <div class="income">
-                    <span class="material-icons-sharp">bar_chart</span>
-                    <div class="middle">
+                    <span class="material-icons-sharp p-1 rounded-circle">bar_chart</span>
+                    <div class="middle d-flex align-items-center justify-content-between">
                         <div class="left">
                             <h3>Total incomes</h3>
                             <h1>$25,024</h1>
                         </div>
-                        <div class="progress">
+                        <div class="progress rounded-circle">
                             <svg>
                                 <circle cx="38" cy="38" r="36"></circle>
                             </svg>
 
-                            <div class="number">
+                            <div class="number d-flex align-items-center justify-content-center w-100 h-100 position-absolute top-0 left-0">
                                 <p>81%</p>
                             </div>
                         </div>
@@ -118,18 +121,18 @@
                 </div>
 
                 <div class="expenses">
-                    <span class="material-icons-sharp">stacked_line_chart</span>
-                    <div class="middle">
+                    <span class="material-icons-sharp p-1 rounded-circle">stacked_line_chart</span>
+                    <div class="middle d-flex align-items-center justify-content-between">
                         <div class="left">
                             <h3>Total expenses</h3>
                             <h1>$25,024</h1>
                         </div>
-                        <div class="progress">
+                        <div class="progress rounded-circle">
                             <svg>
                                 <circle cx="38" cy="38" r="36"></circle>
                             </svg>
 
-                            <div class="number">
+                            <div class="number d-flex align-items-center justify-content-center w-100 h-100 position-absolute top-0 left-0">
                                 <p>81%</p>
                             </div>
                         </div>
@@ -138,10 +141,10 @@
                 </div>
             </div>
 
-            <div class="recent-orders">
-                <h2>Recent Orders</h2>
+            <div class="recent-orders mt-5">
+                <h2 class="mb-2">Recent Orders</h2>
 
-                <table>
+                <table class="text-center w-100">
                     <thead>
                         <tr>
                             <th>Product Name</th>
@@ -195,22 +198,22 @@
                         </tr>
                     </tbody>
                 </table>
-                <a href="">Show All</a>
+                <a href="" class="d-block text-center my-4">Show All</a>
             </div>
         </main>
 
-        <div class="right">
-            <div class="top">
-                <button id="menu-btn">
+        <div class="right mt-5">
+            <div class="top d-flex justify-content-end gap-3">
+                <button id="menu-btn" class="d-none">
                     <span class="material-icons-sharp">menu</span>
                 </button>
 
-                <div class="theme-toggler">
+                <div class="theme-toggler d-flex justify-content-center align-items-center">
                     <span class="material-icons-sharp active">light_mode</span>
                     <span class="material-icons-sharp">dark_mode</span>
                 </div>
 
-                <div class="profile">
+                <div class="profile d-flex gap-3 text-start">
                     <div class="info">
                         <p>Hey, <b>Arthur</b></p>
                         <small class="text-muted">Admin</small>
@@ -222,8 +225,8 @@
                 </div>
             </div>
 
-            <div class="recent-updates">
-                <h2>Recent Updates</h2>
+            <div class="recent-updates mt-3">
+                <h2 class="mb-3">Recent Updates</h2>
                 <div class="updates">
                     <div class="update">
                         <div class="profile-picture">
@@ -267,8 +270,8 @@
                 </div>
             </div>
 
-            <div class="sales-analytics">
-                <h2>Sales Analytics</h2>
+            <div class="sales-analytics mt-5">
+                <h2 class="mb-3">Sales Analytics</h2>
                 <div class="item online">
                     <div class="icon">
                         <span class="material-icons-sharp">shopping_cart</span>
